@@ -12,7 +12,7 @@ function setUserName() {
     setUserName();
   } else {
     localStorage.setItem('name', myName);
-    myHeading.innerHTML = 'LBL 酷毙了，' + myName;
+    myHeading.innerHTML = myName + '大帅逼' ;
   }
 }
 
@@ -21,7 +21,7 @@ if (!localStorage.getItem('name')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
-  myHeading.textContent = 'LBL 酷毙了，' + storedName;
+  myHeading.textContent = storedName + '大帅逼';
 }
 
 // 为按钮设置 onclick 事件处理器：
